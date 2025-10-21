@@ -1,0 +1,46 @@
+# ======================
+# General Python setup
+# ======================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.log
+
+# Virtual environments
+.venv/
+.venv-ddb/
+env/
+venv/
+
+# ======================
+# DuckDB & Data outputs
+# ======================
+# Local DuckDB databases
+*.duckdb
+*.duckdb.wal
+
+# Generated Parquet data
+parquet/
+*.parquet
+
+# Ignore any temporary data exports or artifacts
+data/*.zip
+data/*.tmp
+data/*.bak
+
+# ======================
+# Jupyter and IDE files
+# ======================
+.ipynb_checkpoints/
+*.ipynb~
+.vscode/
+.idea/
+*.code-workspace
+
+# ======================
+# OS and misc files
+# ======================
+.DS_Store
+Thumbs.db
