@@ -31,20 +31,19 @@ duckdb-movielens/
 
 ## ⚙️ Environment Setup
 
+Each user should create their own local Python virtual environment (the `.venv-ddb` folder is not included in the repository).
+
 ```bash
 # Clone and enter the project
 git clone https://github.com/YOUR-USERNAME/duckdb-movielens.git
 cd duckdb-movielens
 
-# Activate your DuckDB environment
-source ~/.venv-ddb/bin/activate
-# or create one if not already done
-# python3 -m venv .venv-ddb && source .venv-ddb/bin/activate
+# Create and activate a local virtual environment
+python3 -m venv .venv-ddb
+source .venv-ddb/bin/activate
 
 # Install required packages
 pip install duckdb pandas matplotlib
-```
-
 ---
 
 ## 📂 Data
