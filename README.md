@@ -44,6 +44,15 @@ source .venv-ddb/bin/activate
 
 # Install required packages
 pip install duckdb pandas matplotlib
+# or, if a requirements file is provided
+# pip install -r requirements.txt
+```
+
+If you already maintain a shared environment named `.venv-ddb` (used across multiple projects), you can simply activate it instead of creating a new one:
+
+```bash
+source ~/.venv-ddb/bin/activate
+```
 ---
 
 ## 📂 Data
