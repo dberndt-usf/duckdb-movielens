@@ -82,7 +82,8 @@ duckdb movielens.duckdb -init sql/demo1_load.sql
 | demo4_window | Window functions | User-level averages |
 | demo5_explain | Query plans | `EXPLAIN` and optimization |
 | demo6_parquet | Parquet export/query | Write & read Parquet files |
-| demo7_similarity | Analytical SQL | Cosine similarity on ratings |
+| demo7a_sim_centered | Analytical SQL | Cosine similarity on centerd ratings |
+| demo7b_sim_raw | Analytical SQL | Cosine similarity on raw ratings |
 
 To run all demos in sequence:
 ```bash
