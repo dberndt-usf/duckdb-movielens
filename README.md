@@ -132,4 +132,4 @@ git update-index --no-assume-unchanged data/*.csv
 ---
 
 **Author:** Don Berndt  
-**University of South Florida – Health Informatics Program**
+**Muma College of Business, University of South Florida**
