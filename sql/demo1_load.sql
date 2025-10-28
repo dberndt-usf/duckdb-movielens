@@ -1,6 +1,8 @@
 -- demo1_load.sql
--- Create and load MovieLens tables
+-- Run DuckDB as an in-memory database.
+-- Invoke as "duckdb" with no file specified.
 
+-- Create and load MovieLens tables.
 CREATE OR REPLACE TABLE movies AS
 SELECT * FROM read_csv_auto('data/movies.csv');
 
@@ -13,7 +15,9 @@ SELECT * FROM read_csv_auto('data/tags.csv');
 CREATE OR REPLACE TABLE links AS
 SELECT * FROM read_csv_auto('data/links.csv');
 
--- Verify
+-- Verify tables exist.
 .tables
+
+-- Run a couple queries.
 SELECT COUNT(*) AS num_movies FROM movies;
 SELECT COUNT(*) AS num_ratings FROM ratings;
